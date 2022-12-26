@@ -16,6 +16,7 @@ cd into the directory where dockerfile is located
 > $ sudo docker build . fastapi
 
 **Running Docker Image**
+> $ sudo systemctl start docker
 > $ sudo docker run -d -p *host-port*:*docker-port* *image-name*
 
 **eg.**
