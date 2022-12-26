@@ -17,6 +17,7 @@ cd into the directory where dockerfile is located
 
 **Running Docker Image**
 > $ sudo systemctl start docker
+
 > $ sudo docker run -d -p *host-port*:*docker-port* *image-name*
 
 **eg.**
