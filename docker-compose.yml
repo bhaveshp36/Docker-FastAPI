@@ -3,8 +3,11 @@ version: '2'
 services: 
     main:
         build: ./pythonapi
+        ports:
+            - "5052:5052"
         network_mode: host
-        volumes: /home/deadly/testLi-Vol:/vol
+        volumes:
+            - /home/deadly/testLi-Vol:/vol
     nginx:
         build: ./nginx
         container_name: nginx
