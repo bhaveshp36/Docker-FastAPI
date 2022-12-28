@@ -1,0 +1,14 @@
+version: '2'
+
+services: 
+    main:
+        build: ./pythonapi
+        network_mode: host
+        volumes: /home/deadly/testLi-Vol:/vol
+    nginx:
+        build: ./nginx
+        container_name: nginx
+        environment: 
+            - SERVER_NAME=0.0.0.0
+        restart: always
+        network_mode: host
