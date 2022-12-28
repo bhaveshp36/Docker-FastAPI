@@ -30,3 +30,11 @@ go to '*host-ip*:8080'
 
 **eg.**
 192.168.0.101:8080/docs
+
+
+**Mounting folder inside docker**
+
+>sudo docker run -v $(pwd)/testLi-Vol:/vol -p 8080:8000 -itd fastapi
+
+**Root Bash in docker** 
+>docker exec -it -u root *docker-id/docker-name* /bin/bash
